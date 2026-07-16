@@ -19,6 +19,8 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // './' → GitHub Pages / alt klasör hostlarda da çalışır
+  base: "./",
   plugins: [figmaAssetResolver(), react(), tailwindcss()],
   resolve: {
     alias: {
@@ -26,4 +28,8 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.svg", "**/*.csv"],
+  preview: {
+    host: true,
+    port: 4173,
+  },
 });

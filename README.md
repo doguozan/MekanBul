@@ -2,7 +2,9 @@ MekanBul
 
 Mekan/işletme rezervasyon sistemi için geliştirilen bir demo uygulama. Düğün salonu, konferans salonu, teras, restoran gibi etkinlik mekanlarının keşfedilip rezerve edilebildiği bir müşteri arayüzü ile mekan sahiplerinin rezervasyonlarını, doluluk takvimini ve performansını takip edebildiği bir yönetim paneli içerir.
 
-Bu proje production'a alınmamıştır; amacı bir ürün fikrini uçtan uca (UI/UX tasarımından çalışan bir arayüze) taşıma sürecini göstermektir.
+Canlı demo: https://doguozan.github.io/MekanBul/
+
+Amaç, bir ürün fikrini uçtan uca (UI/UX tasarımından çalışan bir arayüze) taşıma sürecini göstermektir.
 
 Öne Çıkan Özellikler
 
@@ -55,5 +57,11 @@ Görseller Unsplash üzerinden, lisansına uygun şekilde kullanılmıştır.
 Mobil uyumlu tasarım Figma aşamasında oluşturulmuştur; ancak proje şu an yalnızca web olarak kodlanmıştır, ayrı bir mobil (iOS/Android) kod tabanı bulunmamaktadır.
 
 
+```bash
 npm install
-npm run dev
+npm run dev        # geliştirme
+npm run build      # production build (dist/)
+npm run preview    # Vite ile production önizleme
+```
+
+GitHub Pages: `main` branch'e push edilince Vite build otomatik yayınlanır.
